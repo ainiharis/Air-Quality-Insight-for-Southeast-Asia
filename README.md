@@ -3,5 +3,5 @@ Designed and developed Air Quality Insights for Southeast Asia, a web platform f
 
 
 ### Sample interface
-<img width="1059" height="517" alt="image" src="https://github.com/user-attachments/assets/4e010525-95ab-4dd1-a147-1d792a372c2a" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/4e010525-95ab-4dd1-a147-1d792a372c2a" />
 
