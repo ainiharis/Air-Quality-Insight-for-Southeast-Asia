@@ -6,8 +6,7 @@ Designed and developed Air Quality Insights for Southeast Asia, a web platform f
 
 **Introduction**
 
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/15982745-94be-4316-8452-d011d4b6a4f1" />
-
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/15982745-94be-4316-8452-d011d4b6a4f1" /><br>
 
 
 **Interactive Map**
