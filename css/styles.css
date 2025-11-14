@@ -1,0 +1,358 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', Arial, sans-serif;
+    color: #333;
+}
+
+section {   
+    margin-top: 125px;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 50px;
+}
+
+section {
+  margin-bottom: 20px; 
+  padding-bottom: 20px; 
+}
+
+section + section {
+  margin-top: 0; 
+}
+
+/* Header Styles */
+header {
+    background-color: #3D8C7B;
+    position: fixed;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2em;
+    margin-left: 50px;
+}
+
+.header nav {
+    display: flex;
+    margin-right: 50px;
+}
+
+.header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header nav ul li {
+    margin-right: 25px;
+}
+
+.header nav ul li:last-child {
+    margin-right: 0;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.header nav ul li a:hover {
+    color: #000000;
+}
+
+.logo-container {
+    position: absolute;
+    left: 50%; /* Move to the center horizontally */
+    transform: translateX(-50%);
+}
+
+.logo-container img {
+    max-width: 200px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.intro-section {
+  background-color: #f0f0f0; 
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro-content {
+  flex-basis: 60%; /* take up 60% of the width */
+  padding-right: 20px;
+  padding-left: 250px;
+  text-align: center;
+}
+
+.text {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.heading {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.map-container {
+    height: 650px;
+    width: 85%;
+    margin: 0 auto; 
+    border: 2px solid #f2f2f2; 
+    padding: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Centering the map using Flexbox */
+.map-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-label {
+    margin-top: 10px;
+    font-size: 1.0em;
+    color: #555;
+}
+
+.centered-header {
+  text-align: center;
+}
+
+/* AQI Table Styles */
+.aqi-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+.aqi-table th, .aqi-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.aqi-table thead tr {
+    background-color: #81D8D0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.aqi-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.aqi-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.aqi-table tbody tr:last-of-type {
+    border-bottom: 2px solid #81D8D0;
+}
+
+.aqi-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Subscribe Section Styles */
+.subscribe {
+    background-color: #f2f2f2;
+    padding: 50px 75px;
+    text-align: center;
+}
+
+.subscribe h2 {
+    margin-top: 0;
+}
+
+.subscribe form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe label {
+    margin: 10px 0 5px;
+}
+
+.subscribe input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    background-color: #81D8D0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #66b2a7;
+}
+
+.sidebar {
+  background-color: #f7f7f7;
+  padding: 20px;
+  width: 250px; /* adjust the width as needed */
+  position: sticky;
+  top: 0;
+  right: 0;
+  height: 30vh;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-top: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a.btn {
+  display: block;
+  background-color: #81D8D0;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sidebar a.btn:hover {
+  background-color: #66b2a7;
+}
+
+/*page 2*/
+.about {
+    border: 2px solid #194968;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+	margin-top: 120px;
+}
+
+.logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-container img {
+    max-width: 200px;
+    height: auto;
+}
+
+main {
+    margin-top: 125px;
+    padding: 0 75px;
+}
+
+.about h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+	
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.list-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.list img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.list h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.list p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container > section {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #3D8C7B;
+    color: #fff;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+footer p {
+    font-weight: 700;
+}
+

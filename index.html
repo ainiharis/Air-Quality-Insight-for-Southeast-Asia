@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Air Quality Map</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <h1>Breathe Easy with BreatheWell</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="page2.html">Information</a></li> 
+        </ul>
+      </nav>
+		<div class="logo-container">
+            <img src="img/logo2.png" alt="Logo">
+    </div>
+  </header>
+
+<section class="intro-section" id="section20">
+  <div class="intro-content">
+    <h2 class="heading">Breathe Easy with BreatheWell</h2>
+    <p class="text">Air pollution refers to the contamination of the air by harmful substances. 
+    These substances can be solid particles, like dust and smoke, or gaseous pollutants like nitrogen dioxide and ozone.
+    BreatheWell is your one-stop shop for understanding air quality in Southeast Asia. 
+    We leverage real-time data and interactive maps to empower you to make informed decisions about your health.</p>
+    <p class="text">To monitor these harmful effects, government agencies and environmental organizations around the world use an Air Quality Index (AQI) to track pollution levels. 
+    The AQI is a numerical value that reflects the concentration of various pollutants in the air, along with a corresponding color-coded scale that allows for easy interpretation.</p>
+    <p class="text">A low AQI indicates good air quality, while a high AQI signifies unhealthy air conditions. These AQIs are calculated using data collected from air quality monitoring stations located throughout a city or region. 
+    By tracking air quality through AQIs and APIs, we can gain valuable insights into the health of our environment and take action to reduce air pollution and its negative impacts.</p>
+  </div>
+</section>
+
+<section class="map-section">
+  <h2>Interactive Map</h2>
+  <p>This map uses an air quality data API to display real-time AQI levels for cities.</p>
+  <div id='map' class="map-container"></div>
+  <p class="map-label">Data Source: World Air Quality Index</p>
+</section>
+
+<section>
+  <h2 class="centered-header">Air Quality Index Scaling Guide</h2>
+  <table class="aqi-table">
+    <thead>
+      <tr>
+        <th>AQI Category</th>
+        <th>Description</th>
+        <th>Health Concerns</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="good">
+        <td>0-50</td>
+        <td>Good</td>
+        <td>Minimal impact</td>
+        <td>Enjoy your outdoor activities!</td>
+      </tr>
+      <tr class="moderate">
+        <td>51-100</td>
+        <td>Moderate</td>
+        <td>May cause minor breathing discomfort for some people</td>
+        <td>Continue usual activities.</td>
+      </tr>
+      <tr class="unhealthy-for-sensitive-groups">
+        <td>101-150</td>
+        <td>Unhealthy for Sensitive Groups</td>
+        <td>May cause moderate breathing problems for people with asthma, heart disease, or lung disease</td>
+        <td>Reduce outdoor activity, especially for children and older adults.</td>
+      </tr>
+      <tr class="unhealthy">
+        <td>151-200</td>
+        <td>Unhealthy</td>
+        <td>Everyone may begin to experience health effects; for some, it may cause more serious breathing problems</td>
+        <td>Reduce outdoor activity. Consider using air purifiers indoors.</td>
+      </tr>
+      <tr class="very-unhealthy">
+        <td>201-300</td>
+        <td>Very Unhealthy</td>
+        <td>Health warnings of serious effects.</td>
+        <td>Avoid outdoor activity. Everyone may experience more serious health effects.</td>
+      </tr>
+      <tr class="hazardous">
+        <td>301-500</td>
+        <td>Hazardous</td>
+        <td>Health alert: everyone may experience serious health effects.</td>
+        <td>Stay indoors and avoid all outdoor exertion.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="sidebar">
+  <h2>Real-time Malaysia Most Polluted City Ranking</h2>
+  <ul>
+    <li>#1, Kuala Lumpur</li>
+    <!-- Add more list items for other cities -->
+  </ul>
+  <a href="https://www.iqair.com/malaysia/kuala-lumpur" class="btn">Learn More</a>
+</section>
+
+<section class="subscribe">
+  <h2>Subscribe to our Newsletter</h2>
+  <p>Stay updated with the latest air quality reports and health tips by subscribing to our newsletter.</p>
+  <form action="#" method="post">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; Interactive Air Quality Map</p>
+</footer>
+
+<script src="js/map.js"></script>
+</body>
+
+</html>
